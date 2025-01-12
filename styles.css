@@ -1,0 +1,497 @@
+/* Css for body and html */
+html, body {
+  height: 100%; 
+  width: 100%; 
+  padding: 0px;
+  margin: 0px;
+  background-color: rgb(255, 255, 255);
+
+}
+
+/* Css for footer element */
+footer {
+  background-color: #294561;
+  margin-top: 40px;
+  color: #818181;
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding: 30px 10px 100px 10px;
+  box-shadow: 0 -10px 10px -5px;
+}
+
+/* General button formatting */
+.btn {
+  margin-top: 5px !important;
+  margin-right: 5px !important;
+  transition: all 0.4s;
+}
+
+/* CSS size and position of the newsletter subscription input box */
+#email-box {
+  min-width: 125px;
+  max-height: 40px;
+  margin-left: 10px;
+}
+
+/* CSS for the product information paragraph/header at the top of the page */
+.productInfo {
+  text-align: center;
+  padding: 50px;
+  margin-bottom: 40px;
+  background-color: #294561;
+  color: #818181;
+  box-shadow: 0 10px 10px -5px #818181;
+}
+
+
+
+/* CSS for the Alert Modal starts here */
+
+/* Class used to format the header and footer of the alert modal */
+.alertCSS {
+  background-color: #294561;
+  color: #818181;
+} 
+
+/* Id used to format the text within the alert modal */
+#alert-text {
+  font-size: 25px;
+  text-align: center;
+  margin: 10px 0px 0px;
+}
+
+/* Id used to format the "Close" button of the alert modal  */
+#alert-btn {
+  color: #818181;
+  border: solid 1px #818181;
+}
+
+
+
+
+
+/* CSS for the Navigation Bar starts here */
+
+/* CSS to keep the navigation bar in place during scrolling */
+.fixed-top {
+  position: sticky;
+}
+
+/* class navCSS used for formatting of subscribe button in footer */
+.navCSS, .navbar a {
+  background-color: #294561;
+  color: #818181;
+  border-color: #818181;
+  padding: 10px 15px 10px 13px;
+  margin: 0px;
+}
+
+/* CSS for the navigation button elements */
+.navbar-nav {
+  display: -webkit-inline-box; /* Prevents the nav bar button from resizing with screen resizing*/ 
+  padding-right: 15px;
+  padding-left: 10px;
+}
+
+/* CSS for button of the nav bar unordered list elements */
+.navbar ul {
+  width: fit-content;
+}
+
+
+
+
+
+/* CSS for the carousel starts here */
+
+/* CSS for the carousel control buttons */
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='gray' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+/* CSS for the carousel control buttons */
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='gray' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+/* CSS for the carousel control wrapper element */
+#carouselExampleCaptions {
+  z-index: 2 !important; /* Keep it behind the focus overlay */
+}
+
+/* CSS for the carousel images */
+.carousel-item {
+  transition-duration: 5s; /* the duration for how long images stay displayed */
+}
+
+/* CSS for the text and header within the carousel images */
+.carousel-caption p,
+.carousel-caption h5 {
+  font-size: 30px;
+  text-shadow: 0 1px 0 #64A8ED, /* Source: https://markdotto.com/playground/3d-text/ */
+  0 2px 0 #497BAD,
+  0 3px 0 #294561,
+  0 4px 0 #2E4E6E,
+  0 5px 0 #1E3347,
+  0 6px 1px rgba(0,0,0,.1),
+  0 0 5px rgba(0,0,0,.1),
+  0 1px 3px rgba(0,0,0,.3),
+  0 3px 5px rgba(0,0,0,.2),
+  0 5px 10px rgba(0,0,0,.25),
+  0 10px 10px rgba(0,0,0,.2),
+  0 20px 20px rgba(0,0,0,.15);
+}
+
+
+
+
+
+/* For the comic book displays starts here*/
+
+/* Set the width of the comic book display area to a maximum range when the screen is over 1200px */
+@media (min-width: 1200px) {
+  .card-area {
+    max-width: 1400px;
+  }
+}
+
+/* CSS for each product element box */
+.card {
+  border: none;
+  cursor: pointer;
+}
+
+/* CSS for the "add to basket" and "remove" from basket button in the product box */
+.card-link {
+  font-weight: bold;
+  color: #497BAD;
+}
+
+/* Formats the comic book paragraph elements in the comic book display area */
+.hidecardtext p {
+  color: #58697A;
+  font-weight:700;
+  cursor: default;
+}
+
+/* Disables the hover animation on cards at smaller screens*/
+@media only screen and (min-width: 767px) {
+  .imghover:hover {
+    position: relative;
+    opacity: 85%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    top: -5px;
+    transition: top 5s ease 0.5s;
+    border: 1px solid gold;
+    transform: scale(1.1);
+  }
+}
+
+/* CSS for the Login Box starts here*/   
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* CSS for the login and cancel buttons in the login box */
+.loginbtn {
+  background-color: #294561;
+  color: #818181;
+  font-size: 20px;
+  padding: 14px 20px;
+  margin: 8px 0px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border: 1px solid #818181;
+  border-radius: .25rem;
+}
+
+/* CSS for the cancel button */
+.cancelbtn {
+  padding: 10px 18px;
+  background-color: #294561;
+  color: #818181;
+  border: 1px solid #818181;
+  border-radius: .25rem;
+}
+
+/* Center the backdrop image (skyline image) */
+.imgcontainer {
+  max-width: 100%;
+  text-align: center;
+  height:auto;
+  position: relative;
+}
+
+/* CSS for the inserted gif image in the lgin box */
+img.avatar {
+  position: absolute;
+  top: 2%;
+  right: 10%;
+  width: 20%;
+  border-radius: 50%;
+}
+
+/* CSS for the "forgot password" element */
+span.psw {
+  padding: 8px;
+  font-size: 20px;
+  text-align: center;
+  display: block;
+}
+
+/* Sets the background of the login box to black and text to white */
+.bg-black {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* CSS for the wrapper for the login box. Adpated from: https://www.w3schools.com/howto/howto_css_modals.asp */
+.modal-login {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 11; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* CSS for the login form elements. Adpated from: https://www.w3schools.com/howto/howto_css_modals.asp*/
+.modal-content-login {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  height:auto;
+}
+
+/* Used to keep the login box positioned at various screen sizes */
+.loginArea {
+  margin-right: max(25%, 2px); /* Creates a right margin to keep the login modal centered */
+  margin-left: max(25%, 2px); /* Creates a right left to keep the login modal centered */
+  min-width: 187px !important; /* A minimum size for the login box so that the placeholder text in input boxes are not cut off during screen resizing */
+}
+
+
+/* CSS for the login close Button */
+.close {
+  position: absolute;
+  right: 2%;
+  top: 2%;
+  color: #818181;
+  font-size: 35px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+
+
+/* CSS for additional formatting for butons when hovered over */
+.btn:hover, .loginbtn:hover, 
+.highlght:hover, #alert-btn:hover,
+.card-link:hover {
+  opacity: 0.8;
+  color: gold;
+  border-color: gold;
+}
+
+/* CSS for additional formatting for butons when button is in focus */
+.btn:focus {
+  outline-color: gold;
+  box-shadow: none !important;
+}
+
+
+/* Changes the login close button on hover/focus */
+.close:hover,
+.close:focus {
+  opacity: 0.8;
+  color: gold;
+  border-color: gold;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation to the login box:  Source: https://frelements.com/init/view/modal-login-form/5b0be35389c42*/
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (min-width: 400px) {
+  span.psw {
+     text-align: right;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+/* Hides the card text when the screen size becomes too small (reppears on smallest screens)*/
+@media only screen and (max-width: 1200px) and (min-width: 767px) {
+  .hidecardtext {
+    display: none !important;
+  }
+}
+
+
+
+
+/* CSS for the side basket menu starts here */
+
+/* CSS for the side basket menu wrapper Adpated from: https://www.w3schools.com/howto/howto_js_off-canvas.asp*/
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  right: 0;
+  background-color: rgb(255, 255, 255); /* Black I changed it */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 25px;
+  text-decoration: none;
+  font-size: 30px;
+  color: #818181;
+  display: block;
+  transition: 0.5s;
+  white-space: nowrap;
+}
+
+
+/* CSS for the total and balance elements in the side basket */
+.sidenav h5 {
+  padding: 0px 0px 0px 25px;
+  text-decoration: none;
+  font-size: 30px;
+  color: #818181;
+  display: block;
+  transition: 0.5s;
+  white-space: nowrap;
+}
+
+/* CSS for the side basket headers */
+.sidenav h6 {
+  padding: 0px 0px 0px 25px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #818181;
+  display: block;
+  transition: 0.5s;
+  white-space: nowrap;
+}
+
+/* CSS for the basket items selected for purchase */
+.sidenav p {
+  padding: 0px 0px 15px 20px;
+  width: 50%;
+  margin: 0px auto;
+  text-decoration: none;
+  font-size: 16px;
+  color: #818181;
+  display: inline-table;
+  transition: 0.5s;
+  
+}
+
+/* CSS for close the side basket button */
+.cartbtn {
+  margin: 0px 75px 10px;
+  white-space: nowrap;
+}
+
+/* CSS for the basket total cost elements (located in the navigation bar, side basket and payment modal */
+.balance {
+  padding: 0px 0px 0px 5px !important;
+  width: auto;
+  margin: 0px 0px 0px 0px;
+  font-size: 30px;
+  padding: 0% 10px 0% 8px;
+  display: inline-flex;
+}
+
+/* This is the for the login in user's first name */
+.userIcon {
+  font-size: 30px !important;
+  padding: 0% 10px 0% 8px !important;
+  margin-bottom: auto;
+}
+
+/* When you mouse over the side basket links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close buttonof the side basket (top right corner) */
+.sidenav .closebtn {
+  margin-top: 0px;
+  font-size: 36px;
+  margin-left: 265px;
+  padding: 0;
+}
+
+/* Transition effect for all the page content moved to the left when the side basket is opened*/
+#sideScroll {
+  transition: margin-right .5s;
+
+}
+
+/* CSS for the focus overlay that is displayed when a modal opens Adpated from: https://stackoverflow.com/questions/52397524/css-overlay-always-on-top-of-menu*/
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  min-height: 100%; /* Full height (cover the whole page) */
+  right: 300px;
+  animation: moveLeft 0.5s ease; /* Animation for sliding the overlay to the left*/
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 3; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+  
+}
+
+/* Used to specify the moveLeft animation used in the overlay above */
+@keyframes moveLeft {
+  from {
+    transform: translateX(300px)
+  }
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* Used to format the payment modal */
+.CSSForm {
+  padding: 12px 20px !important;
+  margin: 0px !important;
+}
