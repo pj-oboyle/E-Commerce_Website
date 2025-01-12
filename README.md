@@ -156,7 +156,7 @@ This project is open-source and available under the [MIT License](LICENSE).
 
 ## Contact
 For any questions or feedback, feel free to contact:
-- Email: [pj-oboyle]
+- Name: [pj-oboyle]
 - GitHub: [pj-oboyle](https://github.com/pj-oboyle)
 
 ---
