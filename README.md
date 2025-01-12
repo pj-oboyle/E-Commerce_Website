@@ -1,4 +1,4 @@
-# DC Comics Online - E-Commerce Website
+# Comic Book E-Commerce Website
 
 This project is a fully functional web application designed to provide a seamless shopping experience for comic book enthusiasts. The site features dynamic product displays, user authentication, a robust shopping cart system, and promotional tools like carousels and newsletters. Below, you will find an overview of the project's unique features, technologies, and usage instructions.
 
