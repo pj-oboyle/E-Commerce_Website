@@ -150,7 +150,7 @@ This project is a fully functional web application designed to provide a seamles
 ---
 
 ## License
-This project is open-source and available under the [MIT License](LICENSE).
+This project is licensed under the GNU General Public License v3.0. See the [LICENSE](LICENSE) file for details.
 
 ---
 
