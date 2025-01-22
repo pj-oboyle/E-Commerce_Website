@@ -1,0 +1,54 @@
+# Node modules (if Node.js is ever used for tooling)
+node_modules/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# PHP-specific files
+*.log
+*.cache
+vendor/
+
+# SQL dump files
+*.sql
+
+# Environment and sensitive configuration files
+.env
+config.php
+connectToComicDB.php
+
+# Editor and IDE files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Generated files
+*.min.css
+*.min.js
+
+# Cache, logs, and temporary files
+/cache/
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Uploads (if any user-generated files are stored here)
+uploads/
+
+# Debugging files
+error_log
+php_error_log
+
+# Compressed files
+*.zip
+*.tar.gz
+
+# Compiled CSS (if you're using SASS or LESS)
+*.css.map
+*.scssc
+
+# Exclude production-specific files (optional)
+.htaccess
